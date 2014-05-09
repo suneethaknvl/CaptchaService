@@ -19,9 +19,89 @@ public class DBConfig {
     public String dbThreadsInitialSize = "5";
     public String dbThreadsMaxActive = "25";
     public String dbThreadsMaxIdle = "10";
-    public String tableName = "captchaStore";
+    private static String tableName = "captchaStore";
     public int dbBucketInterval = 60;
     public int dbTtl = 30 * 24 * 3600;
+
+    public String getDbHost() {
+        return dbHost;
+    }
+
+    public void setDbHost(String dbHost) {
+        this.dbHost = dbHost;
+    }
+
+    public String getDbUser() {
+        return dbUser;
+    }
+
+    public void setDbUser(String dbUser) {
+        this.dbUser = dbUser;
+    }
+
+    public String getDbPass() {
+        return dbPass;
+    }
+
+    public void setDbPass(String dbPass) {
+        this.dbPass = dbPass;
+    }
+
+    public String getDbName() {
+        return dbName;
+    }
+
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
+    }
+
+    public String getDbThreadsInitialSize() {
+        return dbThreadsInitialSize;
+    }
+
+    public void setDbThreadsInitialSize(String dbThreadsInitialSize) {
+        this.dbThreadsInitialSize = dbThreadsInitialSize;
+    }
+
+    public String getDbThreadsMaxActive() {
+        return dbThreadsMaxActive;
+    }
+
+    public void setDbThreadsMaxActive(String dbThreadsMaxActive) {
+        this.dbThreadsMaxActive = dbThreadsMaxActive;
+    }
+
+    public String getDbThreadsMaxIdle() {
+        return dbThreadsMaxIdle;
+    }
+
+    public void setDbThreadsMaxIdle(String dbThreadsMaxIdle) {
+        this.dbThreadsMaxIdle = dbThreadsMaxIdle;
+    }
+
+    public static String getTableName() {
+        return tableName;
+    }
+
+    public static void setTableName(String tableName) {
+        DBConfig.tableName = tableName;
+    }
+
+    public int getDbBucketInterval() {
+        return dbBucketInterval;
+    }
+
+    public void setDbBucketInterval(int dbBucketInterval) {
+        this.dbBucketInterval = dbBucketInterval;
+    }
+
+    public int getDbTtl() {
+        return dbTtl;
+    }
+
+    public void setDbTtl(int dbTtl) {
+        this.dbTtl = dbTtl;
+    }
 
     public Properties getDBConfig() {
         Properties props = new Properties();

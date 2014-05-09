@@ -1,5 +1,7 @@
 package com.flipkart.w3.captcha.storage;
 
+import com.flipkart.w3.captcha.UserDO;
+
 /**
  * Created by IntelliJ IDEA.
  * UserDO: venkata.lakshmi
@@ -11,6 +13,6 @@ public interface CaptchaStorage {
 
     public UserDO dequeueUserDO (String usedId) throws Exception;
 
-    public boolean enqueueUserDO (UserDO userObj);
+    public boolean enqueueUserDO (UserDO userObj) throws Exception;
 
 }

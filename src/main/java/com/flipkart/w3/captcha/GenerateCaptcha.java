@@ -13,7 +13,7 @@ public interface GenerateCaptcha {
 
     public String captchaTextGenerator();
 
-    public boolean storeUserCaptcha(String userId,Object userData,String captchaText) throws CaptchaValidationException;
+    public boolean storeUserCaptcha(String userId,Object userData,String captchaText) throws Exception;
 
     public byte[] imageGenerator(String captchaText);
 }
